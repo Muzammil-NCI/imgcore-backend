@@ -1,0 +1,12 @@
+__pycache__/
+.env
+*.ignore*
+
+*zip
+dependencies/
+
+/docs
+/docs/*
+docs/
+docs/*
+.venv
