@@ -23,7 +23,7 @@ def _common_dimensions(request, status_code: int) -> dict:
     return {
         "Service": _env("SERVICE_NAME", "ImageCore"),
         "Stage": _env("STAGE", _env("ENV", "dev")),
-        "FunctionName": _env("AWS_LAMBDA_FUNCTION_NAME", "demo-fast-api-function"),
+        "FunctionName": _env("AWS_LAMBDA_FUNCTION_NAME", "imgcore-function"),
         "Method": request.method,
         "Route": _resolve_route_template(request),
         "StatusCode": str(status_code),

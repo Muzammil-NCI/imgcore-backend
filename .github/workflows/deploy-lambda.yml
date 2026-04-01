@@ -73,7 +73,7 @@ jobs:
       - name: Update Lambda function code
         run: |
           aws lambda update-function-code \
-            --function-name demo-fast-api-function \
+            --function-name imgcore-function \
             --zip-file fileb://lambda.zip
 
       - name: Summary
