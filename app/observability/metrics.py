@@ -31,7 +31,7 @@ def _common_dimensions(request, status_code: int) -> dict:
 
 
 @metric_scope
-def put_request_metrics(
+async def put_request_metrics(
     metrics,
     *,
     request,

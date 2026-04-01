@@ -45,7 +45,7 @@ async def cloudwatch_metrics_middleware(request, call_next):
                         content_length = int(raw)
                     except ValueError:
                         content_length = None
-            put_request_metrics(
+            await put_request_metrics(
                 request=request,
                 status_code=int(status_code),
                 duration_ms=duration_ms(start, end),
