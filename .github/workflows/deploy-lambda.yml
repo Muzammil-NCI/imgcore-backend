@@ -17,7 +17,6 @@ on:
       - ".github/workflows/deploy-lambda.yml"
 
 env:
-  # Target Lambda runtime Python (pip --python-version / manylinux wheels)
   LAMBDA_PYTHON_VERSION: "3.14"
   SERVICE_NAME: ${{ vars.SERVICE_NAME || 'imagecore-backend' }}
   STAGE: ${{ vars.STAGE || 'prod' }}
